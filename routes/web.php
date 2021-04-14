@@ -14,5 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+Route::get("url_login", function () {
+    return view("vista_login");
+})->name("nombre_login");
+
+Route::get("url_registrar", function () {
+    return view("vista_registrar");
+})->name("nombre_registrar");
+
