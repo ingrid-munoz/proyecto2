@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+// Creamos el "ecosistema"
+Route::resource("cliente",App\Http\Controllers\ClienteController::class);
+Route::resource("empleado",App\Http\Controllers\EmpleadoController::class);
+Route::resource("idioma",App\Http\Controllers\IdiomaController::class);
+Route::resource("factura",App\Http\Controllers\FacturaController::class);
